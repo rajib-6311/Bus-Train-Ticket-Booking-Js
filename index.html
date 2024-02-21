@@ -31,12 +31,19 @@
             }
         }
         }
+       
     </script>
     <!-- End -->
     <!-- Custom style -->
     <style>
       .font-poppins{
        font-family: 'Poppins', sans-serif;
+    }
+    .name{
+      .name{
+          display:flex;
+          justify-content:space-between;
+        }
     }
     </style>
   <!-- End -->
@@ -60,7 +67,7 @@
                 <li><a>Search</a></li>              
               </ul>
             </div>
-            <a class="btn btn-ghost text-4xl">P-Ticket</a>
+            <a class="btn btn-ghost text-4xl">TravelTips</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1  text-base">
@@ -87,12 +94,13 @@
             <figure><img src="images/banner.png" alt="Shoes" /></figure>
             <div class="card-body flex items-center mt-7">
               <h2 class="card-title text-3xl text-white font-bold">End-to-End Travel with</h2>
-              <h2 class="text-3xl text-green-700 font-bold ">P-Poribohan</h2>
-              <p class="">P-Paribahan is one of the prominent private bus transportation companies in Bangladesh. <br>
+              <h2 class="text-3xl text-green-700 font-bold ">TravelTips-Poribohan</h2>
+              <p class="">TravelTips-Paribahan is one of the prominent private bus transportation companies in Bangladesh. <br>
                  Established in 1972, it has grown to become one of the largest bus operators in the country.</p>
            
               <div class="card-actions mb-12">              
-                <button class="btn btn-success">Buy Ticket</button>
+                <!-- <button class="btn btn-success">Buy Ticket</button> -->
+                <button class="btn btn-success"><a href="#by-ticket">Buy Ticket</a></button>
               </div>
                <!-- slider bottom part work start -->
              <div class="flex space-x-10">
@@ -174,8 +182,8 @@
         
           <!-- Paribhon part text start -->
             <section class="my-7">
-              <h6 class="text-5xl font-semibold text-center ">P.H Paribhon</h6>
-              <p class="text-center">PH Paribahan's routes cover a wide range of destinations, <br> including Dhaka, Chittagong, Khulna, Rajshahi, Sylhet, Cox's Bazar, and many others.!</p>  
+              <h6 class="text-5xl font-semibold text-center">TravelTips Paribhon</h6>
+              <p class="text-center">TravelTips Paribahan's routes cover a wide range of destinations, <br> including Dhaka, Chittagong, Khulna, Rajshahi, Sylhet, Cox's Bazar, and many others.!</p>  
             </section>
             <!-- Paribhon part text end -->
             <section class="my-5">                   
@@ -183,13 +191,13 @@
                   <div class="flex gap-4">
                     <img src="images/bus-logo.png" alt="">
                     <div>
-                      <h1 class="text-2xl font-semibold">P.H Paribhon</h1>
+                      <h1 class="text-2xl font-semibold">TravelTips Paribhon</h1>
                       <p>Coach-008-WEB | AC_Business</p>
                     </div>
                   </div>            
                     <div class="flex gap-2 w-48 items-center">
                       <img src="images/bus-icon.png" alt="">
-                      <p class="text-[#3aeb34]"><span>40</span>Sets left</p>
+                      <p class="text-[#3aeb34]"><span id="set-left">40</span>Seats left</p>
                     </div>
                 </div>    
               
@@ -222,10 +230,10 @@
             </div>       
             </section>
           <!-- set booking part -->
-          <section class="my-7">
+          <section id="by-ticket" class="my-7">
             <div class="flex justify-between">
-                <h1 class="text-xl font-bold">Select Your Sets</h1>
-                <h1 class="text-xl font-bold mr-72">Select Your Sets</h1>
+                <h1 class="text-xl font-bold">Select Your Seats</h1>
+                <h1 class="text-xl font-bold mr-72">Select Your Seats</h1>
             </div>
             <hr class="flex-grow border-dotted border-red-600 my-1"> 
           </section>
@@ -246,32 +254,29 @@
         <!-- Ticket button -->
         <section class="my-10">
           <div class="flex gap-14">
-            <div class="grid grid-cols-5 gap-10 w-96 text-center ml-28">
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">A</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">A1</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">A2</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">A3</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">A4</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">B</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">B1</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">B2</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">B3</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">B4</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">C</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">C1</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">C2</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">C3</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">C4</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">D</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">D1</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">D2</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">D3</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">D4</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">E</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">E1</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">E2</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">E3</p>
-              <p class="w-16 h-10 bg-gray-300 pt-2 rounded-lg">E4</p>
+            <div class="grid grid-cols-4 gap-10 w-96 text-center ml-28">
+              <!-- <p class="w-16 h-10  pt-2 rounded-lg">A</p> -->
+             
+              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">A1</p>
+              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">A2</p>
+              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">A3</p>
+              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">A4</p>            
+              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">B1</p>
+              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">B2</p>
+              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">B3</p>
+              <p id="B4" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">B4</p>
+              <p id="C1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">C1</p>
+              <p id="C2" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">C2</p>
+              <p id="C3" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">C3</p>
+              <p id="C4" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">C4</p>
+              <p id="D1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">D1</p>
+              <p id="D2" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">D2</p>
+              <p id="D3" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">D3</p>
+              <p id="D4" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">D4</p>
+              <p id="E1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">E1</p>
+              <p id="E2" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">E2</p>
+              <p id="E3" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">E3</p>
+              <p id="E4" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">E4</p>
             </div>
             <div>
               <img src="images/info-devider.png" alt="">
@@ -279,20 +284,13 @@
 
             <div class="bg-gray-300 p-4 rounded-md">
               <div class="flex gap-24 ">               
-                  <p class="font-semibold">Set <span class="bg-green-300">0</span></p>
+                  <p class="font-semibold">Seat <span class="bg-green-300" id="sit-update">0</span></p>
                   <p class="font-semibold">Class</p>
                   <p class="font-semibold">Price</p>              
               </div>
-              <div class="flex gap-24 ">               
-                  <p>C2</p>
-                  <p>Economy</p>
-                  <p>550</p>              
-              </div>
-              <div class="flex gap-24 ">               
-                  <p>C2</p>
-                  <p>Economy</p>
-                  <p>550</p>                              
-              </div>
+              <div id="show-seat-class-price" class="name"> </div>
+
+             
               <!-- hr line -->
               <hr class="flex-grow border-dotted border-red-600 my-1 w-[100%]"> 
 
@@ -361,7 +359,7 @@
     <footer >
       <footer class="footer p-10 bg-neutral text-neutral-content">
         <aside>
-         <h1 class="text-2xl font-bold">P-Ticket</h1>
+         <h1 class="text-2xl font-bold">TravelTips</h1>
           <p>A bus ticket is a small, official piece <br>
              of paper or card which shows that you <br>
               have paid for a journey on a bus.
@@ -378,7 +376,8 @@
       </footer>
     </footer>
     <!-- footer end -->
-  
+  <!-- Js file added -->
+  <script src="js/script.js"></script>
     
 </body>
 </html>
