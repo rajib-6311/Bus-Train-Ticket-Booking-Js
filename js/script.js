@@ -85,7 +85,7 @@ function updateGrandTotal(status) {
             const discounted = totalCost * .15;
             document.getElementById("grand-total").innerText = totalCost - discounted;         
         }
-        else if (couponCode == "Couple20") {
+        else if (couponCode == "Couple 20") {
             const discounted = totalCost * .2;
             document.getElementById("grand-total").innerText = totalCost - discounted;
 
