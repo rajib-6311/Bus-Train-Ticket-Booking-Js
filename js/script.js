@@ -26,7 +26,25 @@ for (const btn of allBtn) {
 
         showSeatClassPrice.appendChild(div);
         // console.log(seatNumber, seatClass, seatPrice);
+
+        // Total cost calculate
+        updateTotalCost(seatPrice);
+
     })
+}
+
+// Update gandTotal
+function updateGrandTotal() {
+    const totalCost = convtGetValueAll("total-cost-id");
+    document.getElementById("grand-total").innerText = totalCost;
+}
+
+// Total cost calculate
+function updateTotalCost(value) {
+    
+    const totalCost = convtGetValueAll("total-cost-id");
+    const sum = totalCost + parseInt(value);
+    document.getElementById("total-cost-id").innerText = sum;
 }
 
 
