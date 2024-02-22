@@ -4,6 +4,7 @@
 const allBtn = document.getElementsByClassName("add-btn");
 for (const btn of allBtn) {
     btn.addEventListener("click", function (event) {
+        
         const seatNumber = event.target.innerText;
         const seatClass = "Economy";
         const seatPrice = 550;
@@ -28,19 +29,14 @@ for (const btn of allBtn) {
          //button disable and bg color
         event.target.setAttribute("disabled", false);
         const color = event.target.parentNode.querySelector(".btn").style.backgroundColor = "red";
-        // console.log(color);
-        // .style.backgroundColor = "red"
         
-    
         // Total cost calculate
         updateTotalCost(seatPrice);
         updateGrandTotal();
 
         // seats update and left call
         seatLeftCount();
-        seatUpdateCount();
-
-        
+        seatUpdateCount();      
     })
 }
 
@@ -57,9 +53,10 @@ function seatLeftCount(count) {
     const seatsLeft = convtGetValueAll("set-left");
     document.getElementById("set-left").innerText = seatsLeft - 1;
 }
+
 // seats Update count
 function seatUpdateCount(count) {
-
+    
     // four seats added only
     const firstSeats = convtGetValueAll("sit-update");
     if (firstSeats+1 > 4) {
@@ -74,8 +71,7 @@ function seatUpdateCount(count) {
 // Update gandTotal
 function updateGrandTotal(status) {
     const totalCost = convtGetValueAll("total-cost-id");
-    if (status==undefined) {
-        //const totalCost = convtGetValueAll("total-cost-id");
+    if (status==undefined) {     
         document.getElementById("grand-total").innerText = totalCost;
     }
     else {
@@ -105,9 +101,6 @@ function updateTotalCost(value) {
     const sum = totalCost + parseInt(value);
     document.getElementById("total-cost-id").innerText = sum;
 }
-
-
-
 
 // for all value in here 
 function convtGetValueAll(convertId) {
