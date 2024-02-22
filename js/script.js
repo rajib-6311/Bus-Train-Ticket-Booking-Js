@@ -31,7 +31,21 @@ for (const btn of allBtn) {
         updateTotalCost(seatPrice);
         updateGrandTotal();
 
+        // seats update and left call
+        seatLeftCount();
+        seatUpdateCount();
+
     })
+}
+// seats left count
+function seatLeftCount(count) {
+    const seatsLeft = convtGetValueAll("set-left");
+    document.getElementById("set-left").innerText = seatsLeft - 1;
+}
+// seats Update count
+function seatUpdateCount(count) {
+    const seatsLeft = convtGetValueAll("sit-update");
+    document.getElementById("sit-update").innerText = seatsLeft + 1;
 }
 
 // Update gandTotal
