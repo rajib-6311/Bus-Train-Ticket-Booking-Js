@@ -29,14 +29,36 @@ for (const btn of allBtn) {
 
         // Total cost calculate
         updateTotalCost(seatPrice);
+        updateGrandTotal();
 
     })
 }
 
 // Update gandTotal
-function updateGrandTotal() {
+function updateGrandTotal(status) {
     const totalCost = convtGetValueAll("total-cost-id");
-    document.getElementById("grand-total").innerText = totalCost;
+    if (status==undefined) {
+        //const totalCost = convtGetValueAll("total-cost-id");
+        document.getElementById("grand-total").innerText = totalCost;
+    }
+    else {
+        const couponCode = document.getElementById("coupon-code").value;
+
+        if (couponCode == "NEW15") {
+            const discounted = totalCost * .15;
+            document.getElementById("grand-total").innerText = totalCost - discounted;         
+        }
+        else if (couponCode == "Couple20") {
+            const discounted = totalCost * .2;
+            document.getElementById("grand-total").innerText = totalCost - discounted;
+
+        }
+        else {
+            alert("valid coupon code");
+        }
+    }
+    // const totalCost = convtGetValueAll("total-cost-id");
+    // document.getElementById("grand-total").innerText = totalCost;
 }
 
 // Total cost calculate
