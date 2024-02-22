@@ -12,9 +12,6 @@ for (const btn of allBtn) {
         const div = document.createElement("div");
         div.classList.add("name");
 
-        // const p1 = document.createElement("p");
-        // const p2 = document.createElement("p");
-        // const p3 = document.createElement("p");
         const p1 = document.createElement("button");
         const p2 = document.createElement("button");
         const p3 = document.createElement("button");
@@ -30,7 +27,9 @@ for (const btn of allBtn) {
         showSeatClassPrice.appendChild(div);
          //button disable and bg color
         event.target.setAttribute("disabled", false);
-        const color = event.target.parentNode.style.backgroundColor = "red";
+        const color = event.target.parentNode.querySelector(".btn").style.backgroundColor = "red";
+        // console.log(color);
+        // .style.backgroundColor = "red"
         
     
         // Total cost calculate
