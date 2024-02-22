@@ -30,7 +30,8 @@ for (const btn of allBtn) {
         showSeatClassPrice.appendChild(div);
          //button disable and bg color
         event.target.setAttribute("disabled", false);
-        // event.target.innerText.style.backgroundColor = "red";
+        const color = event.target.parentNode.style.backgroundColor = "red";
+        
     
         // Total cost calculate
         updateTotalCost(seatPrice);

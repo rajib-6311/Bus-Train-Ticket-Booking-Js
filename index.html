@@ -180,12 +180,12 @@
           <hr class="flex-grow border-dotted border-red-600 my-8"> 
         
           <!-- Paribhon part text start -->
-            <section class="my-7">
+            <section class="my-2">
               <h6 class="text-5xl font-semibold text-center">TravelTips Paribhon</h6>
               <p class="text-center">TravelTips Paribahan's routes cover a wide range of destinations, <br> including Dhaka, Chittagong, Khulna, Rajshahi, Sylhet, Cox's Bazar, and many others.!</p>  
             </section>
             <!-- Paribhon part text end -->
-            <section class="my-5">                   
+            <section class="my-5 mt-36">                   
                 <div class="flex justify-between my-4 w-2/3">
                   <div class="flex gap-4">
                     <img src="images/bus-logo.png" alt="">
@@ -201,7 +201,7 @@
                 </div>    
               
               <div class="flex gap-5">
-                <div class="bg-slate-50 p-4 rounded-lg w-2/3">
+                <div class="bg-slate-50 p-4 rounded-lg w-2/3 h-72">
                     <div class="flex py-3 justify-between ">
                       <p>Route</p>
                       <p class="font-bold">Dhaka-Sylhet</p>
@@ -274,27 +274,7 @@
               <button class="btn add-btn">E1</button>
               <button class="btn add-btn">E2</button>
               <button class="btn add-btn">E3</button>
-              <button class="btn add-btn">E4</button>
-              <!-- <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">A1</p>
-              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">A2</p>
-              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">A3</p>
-              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">A4</p>            
-              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">B1</p>
-              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">B2</p>
-              <p id="A1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">B3</p>
-              <p id="B4" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">B4</p>
-              <p id="C1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">C1</p>
-              <p id="C2" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">C2</p>
-              <p id="C3" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">C3</p>
-              <p id="C4" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">C4</p>
-              <p id="D1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">D1</p>
-              <p id="D2" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">D2</p>
-              <p id="D3" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">D3</p>
-              <p id="D4" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">D4</p>
-              <p id="E1" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">E1</p>
-              <p id="E2" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">E2</p>
-              <p id="E3" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">E3</p>
-              <p id="E4" class="add-btn w-16 h-10 bg-gray-300 pt-2 rounded-lg">E4</p> -->
+              <button class="btn add-btn">E4</button>        
             </div>
             <div>
               <img src="images/info-devider.png" alt="">
@@ -361,8 +341,27 @@
               </div> 
               <!-- Button -->
               <div>
-                <button class="btn btn-info bg-[#3aeb34] w-full ">Next</button>
+                
+                <button class="btn btn-info bg-[#3aeb34] w-full" onclick="my_modal_1.showModal()">Next</button>
               </div>
+              <!-- Open the modal using ID.showModal() method -->
+  
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img src="images/success.png" alt="">
+                    <h3 class="text-xl text-green-300 font-semibold">success</h3>
+                    <p class="py-4">Thank you for booking our bus seats</p>
+                    <button class="btn btn-secondary bg-green-500">Secondary</button>
+                </div>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
               <!-- teams and condition -->
               <div class="flex justify-between py-5">
                 <p class="text-black underline">Teams & Condition</p>
