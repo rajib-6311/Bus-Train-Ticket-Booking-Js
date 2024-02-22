@@ -12,9 +12,12 @@ for (const btn of allBtn) {
         const div = document.createElement("div");
         div.classList.add("name");
 
-        const p1 = document.createElement("p");
-        const p2 = document.createElement("p");
-        const p3 = document.createElement("p");
+        // const p1 = document.createElement("p");
+        // const p2 = document.createElement("p");
+        // const p3 = document.createElement("p");
+        const p1 = document.createElement("button");
+        const p2 = document.createElement("button");
+        const p3 = document.createElement("button");
 
         p1.innerText = seatNumber;
         p2.innerText = seatClass;
@@ -25,8 +28,10 @@ for (const btn of allBtn) {
         div.appendChild(p3);
 
         showSeatClassPrice.appendChild(div);
-        // console.log(seatNumber, seatClass, seatPrice);
-
+         //button disable and bg color
+        event.target.setAttribute("disabled", false);
+        // event.target.innerText.style.backgroundColor = "red";
+    
         // Total cost calculate
         updateTotalCost(seatPrice);
         updateGrandTotal();
@@ -35,15 +40,33 @@ for (const btn of allBtn) {
         seatLeftCount();
         seatUpdateCount();
 
+        
     })
 }
+
+
+
 // seats left count
 function seatLeftCount(count) {
+    // seats 0 only
+    const firstSeatst = convtGetValueAll("set-left");
+    if (firstSeatst-1 < 0 ) {
+        alert("You conn't more seats");
+        return;
+    }
     const seatsLeft = convtGetValueAll("set-left");
     document.getElementById("set-left").innerText = seatsLeft - 1;
 }
 // seats Update count
 function seatUpdateCount(count) {
+
+    // four seats added only
+    const firstSeats = convtGetValueAll("sit-update");
+    if (firstSeats+1 > 4) {
+        alert("You conn't more seats");
+        return;
+    }
+    
     const seatsLeft = convtGetValueAll("sit-update");
     document.getElementById("sit-update").innerText = seatsLeft + 1;
 }
